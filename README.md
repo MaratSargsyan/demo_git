@@ -1,2 +1,2 @@
 # demo_git
-Backup script using bash. /script.sh
+Backup script using bash.
