@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set source and backup directories
-source_dir="Your/path"
-backup_dir="Your/path"
+source_dir="/home/empty/Desktop/song.txt"
+backup_dir="/home/empty/backup"
 
 # Create a timestamp for the backup folder
 timestamp=$(date +%Y%m%d%H%M%S)
