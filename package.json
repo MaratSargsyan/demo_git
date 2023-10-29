@@ -1,0 +1,19 @@
+{
+  "name": "demo_git",
+  "version": "1.0.0",
+  "description": "Backup script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaratSargsyan/demo_git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaratSargsyan/demo_git/issues"
+  },
+  "homepage": "https://github.com/MaratSargsyan/demo_git#readme"
+}
