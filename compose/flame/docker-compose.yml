@@ -1,0 +1,28 @@
+#docker run -p 5005:5005 -v /path/to/data:/app/data -e PASSWORD=flame_password flame
+
+version: '3.5'
+services:
+  flame:
+    image: pawelmalak/flame
+    container_name: flame
+    ports:
+      - '5005:5005'
+    volumes:
+      - '/opt/flame/data:/app/data'
+    environment:
+      - 'PASSWORD=flame_password'
+    restart: unless-stopped
+
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europ/Yerevan
+    volumes:
+      - /opt/heimdall/config:/config
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
