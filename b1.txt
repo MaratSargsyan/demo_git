@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-hello word!
-=======
-hello GSU
->>>>>>> main
